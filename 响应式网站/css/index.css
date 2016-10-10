@@ -1,0 +1,348 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul,li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.wrap{
+   width: 100%;
+   height: 680px;
+   background: url("../images/beijing.jpg");
+   background-size: cover;
+   position: relative;
+}
+.contact{
+  float: left;
+}
+.contact li{
+  float: left;
+  color: white;
+  height: 50px;
+  font-weight: bolder;
+}
+.contact img{
+  vertical-align: middle;
+}
+.tuiguang{
+  float: right;
+}
+.tuiguang li{
+  float: left;
+  height: 50px;
+  /*clip-path:circle(50% at 50% 50%);
+  -webkit-clip-path:circle(50% at 50% 50%);
+  -moz-clip-path:circle(50% at 50% 50%);*/
+  margin: 0 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.tuiguang img{
+  clip-path:circle(50% at 50% 50%);
+  -webkit-clip-path:circle(50% at 50% 50%);
+  -moz-clip-path:circle(50% at 50% 50%);
+}
+.tuiguang li:hover{
+  transform: rotate(360deg);
+}
+.top{
+  width: 100%;
+  height: 50px;
+}
+.navigation{
+  width: 40px;
+  height: 40px;
+  float: right;
+  border-radius: 10px;
+  border: 2px solid rgba(255,255,255,0.3);
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  display: none;
+}
+.banner{
+  width: 100%;
+  height: auto;
+}
+.box{
+ opacity: 0.5;
+ filter: alpha(opacity=50);
+ background-color: white;
+ height: 60px;
+ width: 980px;
+ margin:0 auto;
+}
+.box li{
+    float: left;
+    width: 25%;
+    height: 60px;
+}
+.box li div{
+  height: 0;
+  width: 100%;
+  transition: all 0.6s;
+  background-color: #168CFA;
+}
+.box .active{
+  height: 100%;
+}
+.box li:hover div{
+  height: 100%;
+}
+.box li:hover a{
+  color: white;
+}
+.box .item1 a{
+  color: white;
+}
+.box a{
+  color: #168CFA;
+  font-weight: bolder;
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.text1,.text2{
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  height: 57px;
+  width: 240px;
+  opacity: 0;
+  animation: mymove 4s;
+  position: absolute;
+}
+.text1{
+  bottom: 400px;
+  left: 40%;
+}
+.text2{
+  bottom: 343px;
+  left: 60%;
+  animation-delay: 2s;
+}
+@keyframes mymove{
+  from {width: 0;opacity: 0;}
+  to {width: 100%;opacity: 1;}
+}
+.body{
+  width: 100%;
+  height: auto;
+}
+.text3{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 40px;
+}
+.body ul{
+  width: 90%;
+  height: auto;
+  margin: 0 5%;
+}
+.body li{
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 25%;
+}
+.box1 img{
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  transition: all 0.5s;
+}
+.box1 p{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  transition: all 0.5s;
+}
+.box1 p span{
+  display: none;
+}
+.box1 li:hover img{
+  transform: scale(1.5,1.5);
+}
+.box1 li:hover p{
+  height: 95%;
+  padding-top: 60px;
+}
+.box1 li:hover p span{
+  display: block;
+  margin-top: 10px;
+}
+.box2 img{
+  width: 96%;
+  height: 96%;
+  border: 4px solid pink;
+  transition: all 0.5s;
+}
+.box2 li:hover img{
+  transform: rotateY(180deg);
+}
+.text4{
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+}
+.news{
+  width: 100%;
+  height: auto;
+  background-color: #CEDDB6;
+  border: 1px solid #CEDDB6;
+}
+.news div{
+  width: 100%;
+  height: auto;
+}
+.box3{
+  width: 90%;
+  height: 40%;
+  margin: 50px 5%;
+}
+.box3 li{
+  float: left;
+  width: 20%;
+  overflow: hidden;
+  margin: 0 6.66%;
+  position: relative;
+}
+.box4{
+  width: 60%;
+  height: 40%;
+  margin: 50px 20%; 
+}
+.box4 li{
+  float: left;
+  width: 30%;
+  overflow: hidden;
+  margin: 0 10%;
+}
+.news img{
+  width: 100%;
+  height: 100%;
+}
+.box3 img{
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  -moz-clip-path: circle(50% at 50% 50%);
+}
+.news .dog{
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  border: 2px solid aqua;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.box3 li:hover .dog{
+  opacity: 1;
+  transform: scale(1.3,1.3);
+}
+.box4 img{
+  clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0 38%, 37% 38%);
+  -moz-clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0 38%, 37% 38%);
+  -webkit-clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0 38%, 37% 38%);
+}
+.fixed{
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media screen and (min-width: 750px) and (max-width: 980px){
+  .box{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px){
+  .wrap{
+    height: 400px;
+  }
+  .text1,.text2{
+    width: 100%;
+    font-size: 30px;
+    left: 0;
+    text-align: center;
+    line-height: 57px;
+  }
+  .text1{
+    bottom: 200px;
+  }
+  .text2{
+    bottom: 143px;
+  }
+  .box{
+    width: 100%;
+    height: auto;
+    display: none;
+    float: left;
+  }
+  .box li{
+    float: none;
+    width: 100%;
+    height: 40px;
+  }
+  .box .active{
+    height: 0;
+  }
+  .box a{
+    height: 40px;
+    line-height: 40px;
+  }
+  .box .item1 a{
+  color: #168CFA;
+  }
+  .body li{
+    width: 50%;
+  }
+  .navigation{
+    display: block;
+    cursor: pointer;
+  }
+  .navigation:hover{
+  background-color: white;
+  color: silver;
+  }
+  .banner{
+    height: 44px;
+  }
+  .box3,.box4{
+    width: 90%;
+    margin: 40px 5%;
+  }
+  .box3 li{
+    width: 30%;
+    margin: 0 1.66%;
+  }
+  .box4 li{
+    width: 30%;
+    margin: 0 10%;
+  }
+}
+
+
+
